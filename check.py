@@ -63,3 +63,6 @@ def checkIfWinner(p1Board, iaBoard):
     if (checkVertical(iaBoard)):
         return (2)
     return (0)
+
+def checkPat(playerBoard, iaBoard):
+    return (playerBoard | iaBoard)
